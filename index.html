@@ -4,11 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <script type="text/javascript" src="script.js"></script> 
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script> 
     <title>Document</title>
 </head>
 <body>
-    
+      <!-- The main content of the page -->
+      <div class="card">
+
+           <!--The search bar-->
+          <div class="search">
+            <input type="text" class="search-bar" placeholder="Search" />
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+          <!-- Weather information -->
+          <div class="weather loading">
+               <h2 class="city">Weather in Denver</h2>
+               <h1 class="temp">51°C</h1>
+               <div class="flex">
+                  <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon"/>
+                  <div class="description">Cloudy</div>
+               </div>
+               <div class="humidity">Humidity: 60%</div>
+               <div class="wind">Wind speed: 6.2km</div>
+       </div>
+
+      </div> 
+
+
 </body>
 </html>
